@@ -1,6 +1,6 @@
 const text = await Deno.readTextFile("input.txt");
 
-export function totalDistance(text: any): number {
+export function totalDistance(text: string): number {
   const [leftList, rightList] = parseInput(text);
   const sortedLeft = leftList.slice().sort((a, b) => a - b);
   const sortedRight = rightList.slice().sort((a, b) => a - b);
@@ -14,7 +14,7 @@ export function totalDistance(text: any): number {
   return totalDistance;
 }
 
-export function calculateSimilarityScore(text: any): number {
+export function calculateSimilarityScore(text: string): number {
   const [leftList, rightList] = parseInput(text);
   const countMap: { [key: number]: number } = {};
 

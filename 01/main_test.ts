@@ -8,6 +8,6 @@ Deno.test(function totalDistanceTest() {
   assertEquals(totalDistance(text), 11);
 });
 
-Deno.test(function totalDistanceTest() {
-  assertEquals(calculateSimilarityScore(text), 31);
+Deno.test(function SimilarityScoreTest() {
+  assertEquals(calculateSimilarityScore(text), 311);
 });
